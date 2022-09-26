@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="An example of a home page for a commercial bank" />
+  <title>Bank</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico?" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+
+<body>
+  <header class="header">
+  <div class="header__container">
+    <div class="header__body">
+      <input class="header__toggle" id="burger__menu" type="checkbox">
+      <label class="header__burger" for="burger__menu">
+      </label>
+      <a href="#" class="header__logo">Bank</a>
+      <nav class="header__menu">
+        <div class="header__tab tab">
+          <div class="tab__container ">
+            <div class="tab__wrapper">
+              <input type="radio" name="tab" id="tab1" checked />
+              <label class="tab__label" for="tab1" nth="1"><span></span>Personal</br>banking</label>
+              <div class="tab__item">
+                <ul class="tab__item_list">
+                  <li><a href="#">Loans</a></li>
+                  <li><a href="#">Cards</a></li>
+                  <li><a href="#">Deposit and Investment</a></li>
+                  <li><a href="#">Digital Banking</a></li>
+                  <li><a href="#">Insurance & Pension Funds</a></li>
+                  <li><a href="#">Payments</a></li>
+                  <li><a href="#">Expat Banking</a></li>
+                  <li><a href="#">Private Banking</a></li>
+                </ul>
+              </div>
+      
+              <input type="radio" name="tab" id="tab2" />
+              <label class="tab__label" for="tab2" nth="2"><span></span>Commercial</br>banking</label>
+              <div class="tab__item">
+                <ul class="tab__item_list">
+                  <li><a href="#">Loans</a></li>
+                  <li><a href="#">Cards</a></li>
+                  <li><a href="#">Digital Banking</a></li>
+                  <li><a href="#">Foreign Trade</a></li>
+                  <li><a href="#">Multinational Banking</a></li>
+                  <li><a href="#">Cash Management</a></li>
+                  <li><a href="#">Deposit and Investment</a></li>
+                </ul>
+              </div>
+      
+              <input type="radio" name="tab" id="tab3" />
+              <label class="tab__label" for="tab3" nth="3"><span></span>About</br>us</label>
+              <div class="tab__item">
+                <ul class="tab__item_list">
+                  <li><a href="#">Who We Are</a></li>
+                  <li><a href="#">Investor Relations</a></li>
+                  <li><a href="#">Sustainability</a></li>
+                  <li><a href="#">Press Releases</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <button class="header__search"></button>
+      <div class="header__login">
+        <button id="loginButton_commercial" class="header__login_commercial">Commercial</button>
+        <button id="loginButton_personal" class="header__login_personal">Personal</button>
+      </div>
+    </div>
+  </div>
+  <div id="popup_commercial" class="header__popup disabled">
+    <div class="header__popup_background"></div>
+    <div class="popup popup_commercial">
+      <div class="popup__img popup__img_commercial"></div>
+      <div class="popup__container">
+        <h2 class="popup__title">Welcome to Commercial Internet Branch</h2>
+        <input class="popup__input" type="text" placeholder="Commercial Customer Number">
+        <input class="popup__input" type="text" placeholder="User Code / Personal Code">
+        <input class="popup__input" type="text" placeholder="PIN">
+        <a class="popup__pin" href="#">Haven't defined PIN / First use</a>
+      </div>
+    </div>
+  </div>
+  <div id="popup_personal" class="header__popup disabled">
+    <div class="header__popup_background"></div>
+    <div class="popup popup_personal">
+      <div class="popup__img popup__img_personal"></div>
+      <div class="popup__container">
+        <h2 class="popup__title">Welcome to Internet Branch</h2>
+        <input class="popup__input" type="text" placeholder="Customer Number">
+        <input class="popup__input" type="text" placeholder="PIN">
+        <a class="popup__pin" href="#">Haven't defined PIN / First use</a>
+      </div>
+    </div>
+  </div>
+</header>
+  <main>
+  <section class="links">
+    <div class="links__background"></div>
+    <div class="links__container">
+      <ul class="swiper-wrapper links__wrapper ">
+        <li class="swiper-slide links__item ">
+          <div class="links__item_shadow"></div>
+          <p class="links__item_title  ">The most comprehensive mobile banking app</p>
+          <a href="#" class="links__item_button">More</a>
+        </li>
+        <li class="swiper-slide links__item ">
+          <div class="links__item_shadow"></div>
+          <p class="links__item_title  ">Our card provides everything you need</p>
+          <a href="#" class="links__item_button">More</a>
+        </li>
+        <li class="swiper-slide links__item ">
+          <div class="links__item_shadow"></div>
+          <p class="links__item_title">Wide range of Capital</br>Market Products is at Bank</p>
+          <a href="#" class="links__item_button">More</a>
+        </li>
+        <li class="swiper-slide links__item ">
+          <div class="links__item_shadow"></div>
+          <p class="links__item_title  ">Your needs are distinct</br>Your loan is distinguished </p>
+          <a href="#" class="links__item_button">More</a>
+        </li>
+      </ul>    
+    </div>
+    <div class="links__button">
+      <div class="links__button_prev">&lt Prev</div>
+      <div class="links__button_next">Next ></div>
+    </div>    
+  </section>
+  <aside class="ad">
+    <a class="ad__link ad__link_dog" href="#">
+      <picture><source srcset="img/dog.webp" type="image/webp"><img class="ad__img" src="img/dog.jpg" alt="ad_with_dog" width="100" height="50" /></picture>
+      <span>Advertisement with cute gold doggie</span>
+    </a>
+    <a class="ad__link ad__link_cat" href="#">
+      <picture><source srcset="img/cat.webp" type="image/webp"><img class="ad__img" src="img/cat.jpg" alt="ad_with_cat" width="100" height="50" /></picture>
+      <span>Advertisement with cute spotted kitty</span>
+    </a>
+  </aside>
+  <section class="menu">
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a class="menu__item_link" href="#">
+          <div class="menu__item_round">
+            <img class="menu__item_img" src="img/icon1.svg" alt="icon" />
+          </div>
+          <span class="menu__item_describtion">Investor</br>relations</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__item_link" href="#">
+          <div class="menu__item_round">
+            <img class="menu__item_img" src="img/icon2.svg" alt="icon" />
+          </div>
+          <span class="menu__item_describtion">Financial Statements</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__item_link" href="#">
+          <div class="menu__item_round">
+            <img class="menu__item_img" src="img/icon3.svg" alt="icon" />
+          </div>
+          <span class="menu__item_describtion">Calendar</br>of events</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__item_link" href="#">
+          <div class="menu__item_round">
+            <img class="menu__item_img" src="img/icon4.svg" alt="icon" />
+          </div>
+          <span class="menu__item_describtion">Investor Presentation</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__item_link" href="#">
+          <div class="menu__item_round">
+            <img class="menu__item_img" src="img/icon5.svg" alt="icon" />
+          </div>
+          <span class="menu__item_describtion">Multinationals’ branch</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <article class="exchange">
+    <div class="exchange__background"></div>
+    <h2 class="exchange__title">Foreign exchange rates</h1>
+    <div class="exchange__container">
+      <ul class="exchange__list list">
+        <li class="list__item">
+          <div class="list__item_container">
+            <h3 class="list__item_title">USD</h3>
+            <p id="date" class="list__item_date date_small" ></p>
+          </div>
+          <p id="date" class="list__item_date date_big"></p>
+          <ul class="list__currency currency">
+            <li class="currency__buy">
+              <span class="currency__title">Buy</span>
+              <span id="USD_BUY" class="currency__data"></span>
+            </li>
+            <li class="currency__sell">
+              <span class="currency__title">Sell</span>
+              <span id="USD_SELL" class="currency__data"></span>
+            </li>
+          </ul>
+        </li> 
+        <li class="list__item">
+          <div class="list__item_container">
+            <h3 class="list__item_title">EUR</h3>
+            <p id="date" class="list__item_date date_small" ></p>
+          </div>
+          <p id="date" class="list__item_date date_big"></p>
+          <ul class="list__currency currency">
+            <li class="currency__buy">
+              <span class="currency__title">Buy</span>
+              <span id="EUR_BUY" class="currency__data"></span>
+            </li>
+            <li class="currency__sell">
+              <span class="currency__title">Sell</span>
+              <span id="EUR_SELL" class="currency__data"></span>
+            </li>
+          </ul>
+        </li> 
+        <li class="list__item">
+          <div class="list__item_container">
+            <h3 class="list__item_title">GBP</h3>
+            <p id="date" class="list__item_date date_small" ></p>
+          </div>
+          <p id="date" class="list__item_date date_big"></p>
+          <ul class="list__currency currency">
+            <li class="currency__buy">
+              <span class="currency__title">Buy</span>
+              <span id="GBP_BUY" class="currency__data"></span>
+            </li>
+            <li class="currency__sell">
+              <span class="currency__title">Sell</span>
+              <span id="GBP_SELL" class="currency__data"></span>
+            </li>
+          </ul>
+        </li> 
+        <li class="list__item">
+          <div class="list__item_container">
+            <h3 class="list__item_title">JPY</h3>
+            <p id="date" class="list__item_date date_small" ></p>
+          </div>
+          <p id="date" class="list__item_date date_big"></p>
+          <ul class="list__currency currency">
+            <li class="currency__buy">
+              <span class="currency__title">Buy</span>
+              <span id="JPY_BUY" class="currency__data"></span>
+            </li>
+            <li class="currency__sell">
+              <span class="currency__title">Sell</span>
+              <span id="JPY_SELL" class="currency__data"></span>
+            </li>
+          </ul>
+        </li> 
+        <li class="list__item">
+          <div class="list__item_container">
+            <h3 class="list__item_title">TRY</h3>
+            <p id="date" class="list__item_date date_small" ></p>
+          </div>
+          <p id="date" class="list__item_date date_big"></p>
+          <ul class="list__currency currency">
+            <li class="currency__buy">
+              <span class="currency__title">Buy</span>
+              <span id="TRY_BUY" class="currency__data"></span>
+            </li>
+            <li class="currency__sell">
+              <span class="currency__title">Sell</span>
+              <span id="TRY_SELL" class="currency__data"></span>
+            </li>
+          </ul>
+        </li> 
+      </ul>
+      <div class="exchange__buttons">
+        <button class="exchange__buttons_button exchange__buttons_buy">Buy / Sell</button>
+        <button class="exchange__buttons_button exchange__buttons_all">All Foreign exchange rate</button>
+      </div>
+    </div>
+  </article>
+  <section class="news">    
+    <h2 class="news__title">News</h2>
+    <div class="news__container">
+      <ul class="swiper-wrapper news__wrapper">
+        <li class="swiper-slide news__item">
+          <h3 class="news__item_title">Net-zero banking commitment from bank</h3>
+          <p class="news__item_text">Bank has strenghtened its commitment to supporting the transition to a net-zero economy by joining another international initiative in line with its sustainability vision.</p>
+          <a class="news__item_link" href="#">More ></a>
+        </li>
+        <li class="swiper-slide news__item">
+          <h3 class="news__item_title">Exhibition on Metaverse continues</h3>
+          <p class="news__item_text">​Prepared with selective paintings among the works in bank painting collection, first NFT exhibition was met with great interest.</p>
+          <a class="news__item_link" href="#">More ></a>
+        </li>
+        <li class="swiper-slide news__item">
+          <h3 class="news__item_title">Bank receives international occupational health and safety award</h3>
+          <p class="news__item_text">The British Safety Council’s "International Safety Award", one of the most prestigious global awards in the field of occupational health and safety, finds itself a new home.</p>
+          <a class="news__item_link" href="#">More ></a>
+        </li>
+        <li class="swiper-slide news__item">
+          <h3 class="news__item_title">Press Release</h3>
+          <p class="news__item_text">​Our Bank and subsidiaries have no relationship with the institutions which have similar names with our Bank and which are referred to in the news that the UK is to impose sanctions on 5 Russian banks.</p>
+          <a class="news__item_link" href="#">More ></a>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+  <div class="footer__container footer__container_top">
+    <div class="footer__wrapper footer__wrapper_links">
+      <h2>Useful links</h2>
+      <ul class="footer__list footer__list_links">
+        <li class="footer__list_item">
+          <a href="#">Currency Converter</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="#">Investor Relations</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="#">Prices and Rates</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="#">Foreign Exchange Rates</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="#">Bank Research</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="#">Saving</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__wrapper footer__wrapper_bank">
+      <h2>Banking Products</h2>
+      <ul class="footer__list footer__list_bank">
+        <li class="footer__list_item">
+          <a href="#">Western Union</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="#">FX Transfer</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="#">SWIFT</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__wrapper footer__wrapper_contacts">
+      <h2>Contact Us</h2>
+      <ul class="footer__list footer__list_contacts">
+        <li class="footer__list_item">
+          <a href="#">0850 123 4 567</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="#">Contact Us</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="#"> Help</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="#">Contact Form</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="#">Branches and ATMs</a>
+        </li>
+        <li class="footer__list_item">
+          <a href="#">Sitemap</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__container footer__container_bottom">
+    <div class="footer__social">
+      <ul class="footer__social_list">
+        <li>
+          <a class="footer__social_twitter" href="#"></a>
+        </li>
+        <li>
+          <a class="footer__social_facebook" href="#"></a>
+        </li>
+        <li>
+          <a class="footer__social_instagram" href="#"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__credits">
+      <p class="footer__credits_copyright">© 2022 Aligatore</p>
+      <ul class="footer__credits_list">
+        <li class="footer__credits_item">
+          <a href="#">Legal Notice</a>
+        </li>
+        <li class="footer__credits_item">
+          <a href="#">Security</a>
+        </li>
+        <li class="footer__credits_item">
+          <a href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__credits_item">
+          <a href="#">Protection Of Personal Data</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

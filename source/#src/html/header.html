@@ -1,0 +1,87 @@
+<header class="header">
+  <div class="header__container">
+    <div class="header__body">
+      <input class="header__toggle" id="burger__menu" type="checkbox">
+      <label class="header__burger" for="burger__menu">
+      </label>
+      <a href="#" class="header__logo">Bank</a>
+      <nav class="header__menu">
+        <div class="header__tab tab">
+          <div class="tab__container ">
+            <div class="tab__wrapper">
+              <input type="radio" name="tab" id="tab1" checked />
+              <label class="tab__label" for="tab1" nth="1"><span></span>Personal</br>banking</label>
+              <div class="tab__item">
+                <ul class="tab__item_list">
+                  <li><a href="#">Loans</a></li>
+                  <li><a href="#">Cards</a></li>
+                  <li><a href="#">Deposit and Investment</a></li>
+                  <li><a href="#">Digital Banking</a></li>
+                  <li><a href="#">Insurance & Pension Funds</a></li>
+                  <li><a href="#">Payments</a></li>
+                  <li><a href="#">Expat Banking</a></li>
+                  <li><a href="#">Private Banking</a></li>
+                </ul>
+              </div>
+      
+              <input type="radio" name="tab" id="tab2" />
+              <label class="tab__label" for="tab2" nth="2"><span></span>Commercial</br>banking</label>
+              <div class="tab__item">
+                <ul class="tab__item_list">
+                  <li><a href="#">Loans</a></li>
+                  <li><a href="#">Cards</a></li>
+                  <li><a href="#">Digital Banking</a></li>
+                  <li><a href="#">Foreign Trade</a></li>
+                  <li><a href="#">Multinational Banking</a></li>
+                  <li><a href="#">Cash Management</a></li>
+                  <li><a href="#">Deposit and Investment</a></li>
+                </ul>
+              </div>
+      
+              <input type="radio" name="tab" id="tab3" />
+              <label class="tab__label" for="tab3" nth="3"><span></span>About</br>us</label>
+              <div class="tab__item">
+                <ul class="tab__item_list">
+                  <li><a href="#">Who We Are</a></li>
+                  <li><a href="#">Investor Relations</a></li>
+                  <li><a href="#">Sustainability</a></li>
+                  <li><a href="#">Press Releases</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <button class="header__search"></button>
+      <div class="header__login">
+        <button id="loginButton_commercial" class="header__login_commercial">Commercial</button>
+        <button id="loginButton_personal" class="header__login_personal">Personal</button>
+      </div>
+    </div>
+  </div>
+  <div id="popup_commercial" class="header__popup disabled">
+    <div class="header__popup_background"></div>
+    <div class="popup popup_commercial">
+      <div class="popup__img popup__img_commercial"></div>
+      <div class="popup__container">
+        <h2 class="popup__title">Welcome to Commercial Internet Branch</h2>
+        <input class="popup__input" type="text" placeholder="Commercial Customer Number">
+        <input class="popup__input" type="text" placeholder="User Code / Personal Code">
+        <input class="popup__input" type="text" placeholder="PIN">
+        <a class="popup__pin" href="#">Haven't defined PIN / First use</a>
+      </div>
+    </div>
+  </div>
+  <div id="popup_personal" class="header__popup disabled">
+    <div class="header__popup_background"></div>
+    <div class="popup popup_personal">
+      <div class="popup__img popup__img_personal"></div>
+      <div class="popup__container">
+        <h2 class="popup__title">Welcome to Internet Branch</h2>
+        <input class="popup__input" type="text" placeholder="Customer Number">
+        <input class="popup__input" type="text" placeholder="PIN">
+        <a class="popup__pin" href="#">Haven't defined PIN / First use</a>
+      </div>
+    </div>
+  </div>
+</header>
